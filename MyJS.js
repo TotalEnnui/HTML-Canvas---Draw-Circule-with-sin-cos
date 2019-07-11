@@ -22,9 +22,13 @@ function Func(){
     var val = 100;
     const MAX = 50;
     const POINTSIZE = 1;
+    CONST XPOS = 100;
+    CONST YPOS = 100;
 
     var x = 0;
     var y = 0;
+    var xPos = 0;
+    var yPos = 0;
     var radius = MAX;
 
     for(i = 1; i < MAX; i++){
@@ -38,7 +42,9 @@ function Func(){
         
         ctx.fillStyle = "#ff2626";
         ctx.beginPath();
-        ctx.arc(x, y, POINTSIZE, 0, Math.PI * 2, true);
+        xPos = XPOS + x;
+        yPos - YPOS + y;
+        ctx.arc(xPos, yPos, POINTSIZE, 0, Math.PI * 2, true);
         ctx.fill();
     }
        
